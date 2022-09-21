@@ -9,7 +9,7 @@ using MascotaFeliz.App.Persistencia;
 
 namespace MascotaFeliz.App.Frontend.Pages
 {
-    public class DetallesrDuenosModel : PageModel
+    public class DetallesMascotasModel : PageModel
     {
         public void OnGet()
         {

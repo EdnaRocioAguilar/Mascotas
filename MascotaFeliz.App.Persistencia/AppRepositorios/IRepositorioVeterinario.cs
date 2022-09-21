@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using MascotaFeliz.App.Dominio;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace MascotaFeliz.App.Persistencia
 {

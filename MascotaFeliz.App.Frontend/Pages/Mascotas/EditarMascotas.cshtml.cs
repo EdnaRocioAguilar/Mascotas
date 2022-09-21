@@ -9,29 +9,27 @@ using MascotaFeliz.App.Persistencia;
 
 namespace MascotaFeliz.App.Frontend.Pages
 {
-    public class EditarVeterinarioModel : PageModel
+    public class EditarMascotasModel : PageModel
     {
-    
-    private readonly IRepositorioVeterinario _repoVeterinario;
+        private readonly IRepositorioMascota _repoMascota;
         [BindProperty]
-        public Veterinario veterinario { get; set; }
+        public Mascota mascota { get; set; }
 
-        public EditarVeterinarioModel()
+        public EditarMascotasModel()
         {
-            this._repoVeterinario = new RepositorioVeterinario(new Persistencia.AppContext());
+            this._repoMascota = new RepositorioMascota(new Persistencia.AppContext());
         }
-        public IActionResult OnGet(int? veterinarioId)
+        public IActionResult OnGet(int? mascotaId)
         {
-
-            if (veterinarioId.HasValue)
+            if (mascotaId.HasValue)
             {
-                veterinario = _repoVeterinario.GetVeterinario(veterinarioId.Value);
+                mascota = _repoMascota.GetMascota(mascotaId.Value);
             }
             else
             {
-                veterinario = new Veterinario();
+               mascota = new Mascota();
             }
-            if (veterinario == null)
+            if (mascota == null)
             {
                 return RedirectToPage("./NotFound");
             }
@@ -45,15 +43,15 @@ namespace MascotaFeliz.App.Frontend.Pages
             {
                 return Page();
             }
-            if (veterinario.Id > 0)
+            if (mascota.Id > 0)
             {
-                veterinario = _repoVeterinario.UpdateVeterinario(veterinario);
+                mascota = _repoMascota.UpdateMascota(mascota);
             }
             else
             {
-                _repoVeterinario.AddVeterinario(veterinario);
+                _repoMascota.AddMascota(mascota);
             }
             return Page();
         }
-    }
+ }
 }
