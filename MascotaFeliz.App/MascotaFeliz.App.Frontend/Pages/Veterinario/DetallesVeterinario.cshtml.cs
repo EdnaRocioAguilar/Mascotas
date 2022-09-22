@@ -23,7 +23,7 @@ namespace MascotaFeliz.App.Frontend.Pages
         veterinario = _repoVeterinario.GetVeterinario(veterinarioId);
         if (veterinario ==null)
         {
-            return RedirectToPage("./NotFount");
+            return RedirectToPage("./NotFound");
            
         }
         else

@@ -26,7 +26,7 @@ namespace MascotaFeliz.App.Frontend.Pages
             dueno = _repoDueno.GetDueno(duenoId);
             if (dueno == null)
             {
-                return RedirectToPage("./NotFount");
+                return RedirectToPage("./NotFound");
             }
             else
             {
