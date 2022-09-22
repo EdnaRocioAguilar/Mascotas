@@ -9,21 +9,29 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace MascotaFeliz.App.Frontend.Pages
 {
-    public class ListaMascotasModel : PageModel
+    public class DetallesMascotasModel : PageModel
     {
         private readonly IRepositorioMascota _repoMascota;
 
-        public IEnumerable<Mascota> listaMascotas { get; set; }
+        public Mascota mascota { get; set; }
 
-        public ListaMascotasModel()
+        public DetallesMascotasModel()
         {
             this._repoMascota =
                 new RepositorioMascota(new Persistencia.AppContext());
         }
 
-        public void OnGet()
+        public IActionResult OnGet(int mascotaId)
         {
-            listaMascotas = _repoMascota.GetAllMascotas();
+            mascota = _repoMascota.GetMascota(mascotaId);
+            if (mascota == null)
+            {
+                return RedirectToPage("./NotFount");
+            }
+            else
+            {
+                return Page();
+            }
         }
     }
 }
