@@ -17,12 +17,12 @@
 
 
             <td>
-                <a class="btn btn-primary table-btn" asp-page="./DetallesMascotas" asp-route-duenoId="@mascota.Id">
+                <a class="btn btn-primary table-btn" asp-page="./DetallesMascotas" asp-route-mascotaId="@mascota.Id">
                     Detalle Mascota
                 </a>
             </td>
             <td>
-                <a class="btn btn-primary table-btn" asp-page="./EditarMascotas" asp-route-duenoId="@mascota.Id">
+                <a class="btn btn-primary table-btn" asp-page="./EditarMascotas" asp-route-mascotaId="@mascota.Id">
                     Editar Mascota
                 </a>
             </td>
@@ -30,4 +30,4 @@
         </tr>
     }
 </table>
-<a class = "btn btn-primary table-btn" asp-page="./EditarMascota" class="btn-default">Adicionar </a>
+<a class = "btn btn-primary table-btn" asp-page="./EditarMascotas" class="btn-default">Adicionar </a>

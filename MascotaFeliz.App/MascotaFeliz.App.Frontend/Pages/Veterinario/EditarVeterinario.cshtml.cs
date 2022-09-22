@@ -32,7 +32,7 @@ namespace MascotaFeliz.App.Frontend.Pages
             }
             if (veterinario == null)
             {
-                return RedirectToPage("./NotFound");
+                return RedirectToPage("");
             }
             else
                 return Page();

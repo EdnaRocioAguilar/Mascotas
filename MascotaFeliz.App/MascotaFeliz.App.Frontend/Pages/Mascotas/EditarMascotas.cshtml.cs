@@ -31,7 +31,7 @@ namespace MascotaFeliz.App.Frontend.Pages
             }
             if (mascota == null)
             {
-                return RedirectToPage("./NotFound");
+                return RedirectToPage("");
             }
             else
                 return Page();
@@ -50,6 +50,7 @@ namespace MascotaFeliz.App.Frontend.Pages
             else
             {
                 _repoMascota.AddMascota(mascota);
+                return RedirectToPage("./ListaMascotas");
             }
             return Page();
         }
