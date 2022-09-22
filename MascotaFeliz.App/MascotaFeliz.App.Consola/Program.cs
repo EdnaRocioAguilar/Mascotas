@@ -22,9 +22,9 @@ namespace MascotaFeliz.App.Consola
         {
             Console.WriteLine("Estamos haciendo prueba en Edna Rocio!");
 
-            //   AddDueno();
+               // AddDueno();
             //   AddVeterinario();
-            //   AddMascota();
+            AddMascota();
             //   ListarDuenos();
             //   listarMascotas();
             //   BuscarMascota(2);
@@ -34,8 +34,8 @@ namespace MascotaFeliz.App.Consola
         {
             var dueno =
                 new Dueno {
-                    Cedula = "1212",
-                    Nombres = "Juan",
+                    Cedula = "55566",
+                    Nombres = "Jorge muy valiente",
                     Apellidos = "Sin Miedo",
                     Direccion = "Bajo un puente",
                     Telefono = "1234567891",
@@ -112,7 +112,7 @@ namespace MascotaFeliz.App.Consola
                 mascota.Color);
         }
 
-        private static void AsignarVisitaPyP(int idHistoria)
+        /* private static void AsignarVisitaPyP(int idHistoria)
         {
             var historia = _repoHistoria.GetHistoria(idHistoria);
             if (historia != null)
@@ -150,13 +150,13 @@ namespace MascotaFeliz.App.Consola
                 }
                 _repoHistoria.UpdateHistoria (historia);
             }
-        }
+        }*/
 
-        private static void AsignarVeterinario()
+        /*private static void AsignarVeterinario()
         {
             var veterinario = _repoMascota.AsignarVeterinario(1, 15);
             Console
                 .WriteLine(veterinario.Nombres + " " + veterinario.Apellidos);
-        }
+        }*/
     }
 }
