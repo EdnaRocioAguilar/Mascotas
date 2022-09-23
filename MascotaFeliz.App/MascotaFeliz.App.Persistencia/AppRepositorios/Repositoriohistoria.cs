@@ -57,6 +57,29 @@ namespace MascotaFeliz.App.Persistencia
         public Historia GetHistoria(int idHistoria)
         {
             return _appContext.Historias.FirstOrDefault(d => d.Id == idHistoria);
-        }   
+        } 
+
+
+
+
+
+
+
+            public Historia AsignarHistoria(int idMascota, int idHistoria)
+        {
+            var mascotaEncontrado = _appContext.Mascotas.FirstOrDefault(m => m.Id == idMascota);
+            if (mascotaEncontrado !=null)
+            {
+                var historiaEncontrada = _appContext.Historias.FirstOrDefault (v => v.Id == idHistoria);
+                if (historiaEncontrada !=null)
+                {
+                    mascotaEncontrado.Historia = historiaEncontrada;
+                    _appContext.SaveChanges();
+                }
+                return historiaEncontrada;
+            }
+            return null;
+        }
+
     }
 }
