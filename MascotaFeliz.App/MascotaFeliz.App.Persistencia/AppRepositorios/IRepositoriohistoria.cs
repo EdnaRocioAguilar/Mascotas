@@ -14,6 +14,8 @@ namespace MascotaFeliz.App.Persistencia
         void DeleteHistoria(int idHistoria);
         Historia GetHistoria(int idHistoria);
         Historia AsignarHistoria (int idMascota, int idHistoria );
+        IEnumerable<Historia> GetAllHistorias_();
+        
         
     }
 }
