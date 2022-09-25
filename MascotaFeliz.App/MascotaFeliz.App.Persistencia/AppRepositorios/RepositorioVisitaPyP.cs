@@ -42,7 +42,7 @@ namespace MascotaFeliz.App.Persistencia
         }
 
     
-        public VisitaPyP GetVisitasPyP(int idVisitasPyP )
+        public VisitaPyP GetVisitasPyP(int idVisitasPyP)
         {
             return _appContext.VisitasPyP.FirstOrDefault(d => d.Id == idVisitasPyP);
         }
@@ -63,6 +63,6 @@ namespace MascotaFeliz.App.Persistencia
                 _appContext.SaveChanges();
             }
             return visitasPyPEncontrado;
-        }     
-    }
+        }     
+    }
 }

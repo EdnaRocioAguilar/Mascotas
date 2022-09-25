@@ -39,7 +39,7 @@ namespace MascotaFeliz.App.Persistencia
             _appContext.SaveChanges();
         }
 
-       public IEnumerable<Veterinario> GetAllVeterinario()
+        public IEnumerable<Veterinario> GetAllVeterinario()
         {
             return GetAllVeterinario_();
         }
@@ -80,6 +80,24 @@ namespace MascotaFeliz.App.Persistencia
                 _appContext.SaveChanges();
             }
             return veterinarioEncontrado;
-        }     
+        }  
+
+
+
+        public Veterinario AsignarVeterinario(int idMascota, int idVeterinario)
+        {
+            var mascotaEncontrado = _appContext.Mascotas.FirstOrDefault(m => m.Id == idMascota);
+            if (mascotaEncontrado !=null)
+            {
+                var veterinarioEncontrado = _appContext.Veterinarios.FirstOrDefault (v => v.Id == idVeterinario);
+                if (veterinarioEncontrado !=null)
+                {
+                    mascotaEncontrado.Veterinario = veterinarioEncontrado;
+                    _appContext.SaveChanges();
+                }
+                return veterinarioEncontrado;
+            }
+            return null;
+        }
     }
 }

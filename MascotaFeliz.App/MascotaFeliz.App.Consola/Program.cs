@@ -18,16 +18,25 @@ namespace MascotaFeliz.App.Consola
             _repoMascota =
                 new RepositorioMascota(new Persistencia.AppContext());
 
+        private static IRepositorioHistoria
+            _repoHistoria =
+                new RepositorioHistoria(new Persistencia.AppContext());
+
         static void Main(string[] args)
         {
-            Console.WriteLine("Estamos haciendo prueba en Edna Rocio!");
+            Console.WriteLine("Estamos haciendo prueba !");
 
-               // AddDueno();
+            // AddDueno();
             //   AddVeterinario();
-            AddMascota();
+            //   AddMascota();
             //   ListarDuenos();
             //   listarMascotas();
             //   BuscarMascota(2);
+            //    AsignarVeterinario();
+            AsignarVisitaPyP(9);
+            //   AddHistoria();
+            //    AsignarDueno();
+            //    AsignarHistoria();
         }
 
         private static void AddDueno()
@@ -81,10 +90,16 @@ namespace MascotaFeliz.App.Consola
 
         private static void listarMascotas()
         {
-            Console.WriteLine("          LISTADO DE MASCOTAS  JOVENES muy valientes ");
+            Console
+                .WriteLine("          LISTADO DE MASCOTAS  JOVENES muy valientes ");
             Console.WriteLine("           ");
-            Console.WriteLine("Nombre " + "  Raza    " + "     Especie " + "Color");
-            Console.WriteLine("================================================");
+            Console
+                .WriteLine("Nombre " +
+                "  Raza    " +
+                "     Especie " +
+                "Color");
+            Console
+                .WriteLine("================================================");
             var mascotas = _repoMascota.GetAllMascotas();
             foreach (Mascota e in mascotas)
             {
@@ -112,7 +127,7 @@ namespace MascotaFeliz.App.Consola
                 mascota.Color);
         }
 
-        /* private static void AsignarVisitaPyP(int idHistoria)
+        private static void AsignarVisitaPyP(int idHistoria)
         {
             var historia = _repoHistoria.GetHistoria(idHistoria);
             if (historia != null)
@@ -125,11 +140,11 @@ namespace MascotaFeliz.App.Consola
                             FechaVisita = new DateTime(2020, 01, 01),
                             Temperatura = 38.0F,
                             Peso = 30.0F,
-                            FrecuenciaRespiratoria = 71.0F,
-                            FrecuenciaCardiaca = 71.0F,
-                            EstadoAnimo = "Muy cansón",
-                            CedulaVeterinario = "123",
-                            Recomendaciones = "Dieta extrema"
+                            FrecuenciaRespiratoria = 75.0F,
+                            FrecuenciaCardiaca = 78.0F,
+                            EstadoAnimo = "Muy feliz",
+                            CedulaVeterinario = "321",
+                            Recomendaciones = "Dieta mucha comida"
                         });
                 }
                 else
@@ -137,26 +152,54 @@ namespace MascotaFeliz.App.Consola
                     historia.VisitasPyP =
                         new List<VisitaPyP> {
                             new VisitaPyP {
-                                FechaVisita = new DateTime(2020, 01, 01),
-                                Temperatura = 38.0F,
-                                Peso = 30.0F,
-                                FrecuenciaRespiratoria = 71.0F,
-                                FrecuenciaCardiaca = 71.0F,
-                                EstadoAnimo = "Muy cansón",
-                                CedulaVeterinario = "123",
-                                Recomendaciones = "Dieta extrema"
+                            FechaVisita = new DateTime(2020, 01, 01),
+                            Temperatura = 38.0F,
+                            Peso = 30.0F,
+                            FrecuenciaRespiratoria = 75.0F,
+                            FrecuenciaCardiaca = 78.0F,
+                            EstadoAnimo = "loco",
+                            CedulaVeterinario = "321",
+                            Recomendaciones = "Dieta poca comida"
                             }
                         };
                 }
                 _repoHistoria.UpdateHistoria (historia);
             }
-        }*/
+        }
 
-        /*private static void AsignarVeterinario()
+        private static void AsignarVeterinario()
         {
-            var veterinario = _repoMascota.AsignarVeterinario(1, 15);
+            var veterinario = _repoVeterinario.AsignarVeterinario(7, 1004);
             Console
                 .WriteLine(veterinario.Nombres + " " + veterinario.Apellidos);
+        }
+
+        private static void AsignarDueno()
+        {
+            var dueno = _repoDueno.AsignarDueno(1, 2);
+            Console.WriteLine(dueno.Nombres + " " + dueno.Apellidos);
+        }
+
+        private static void AsignarHistoria()
+        {
+            var historia = _repoHistoria.AsignarHistoria(2, 2);
+            Console.WriteLine();
+        }
+
+        private static void AddHistoria()
+        {
+            var historia =
+                new Historia { FechaInicial = new DateTime(500, 09, 22) };
+            _repoHistoria.AddHistoria (historia);
+        }
+
+        /*
+            public void fechactual (string[] args)
+        {
+            string datetime= DateTime.Now.ToString("yyyyMMdd");
+            Console.WriteLine(datetime);
+            
+
         }*/
     }
 }

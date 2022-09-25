@@ -7263,19 +7263,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\adham\\.nuget\\packages\\": {}
+    "C:\\Users\\juane\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\proyectog\\Mascotas\\MascotaFeliz.App\\MascotaFeliz.App.Persistencia\\MascotaFeliz.App.Persistencia.csproj",
+      "projectUniqueName": "C:\\Git\\Mascotas\\MascotaFeliz.App\\MascotaFeliz.App.Persistencia\\MascotaFeliz.App.Persistencia.csproj",
       "projectName": "MascotaFeliz.App.Persistencia",
-      "projectPath": "C:\\proyectog\\Mascotas\\MascotaFeliz.App\\MascotaFeliz.App.Persistencia\\MascotaFeliz.App.Persistencia.csproj",
-      "packagesPath": "C:\\Users\\adham\\.nuget\\packages\\",
-      "outputPath": "C:\\proyectog\\Mascotas\\MascotaFeliz.App\\MascotaFeliz.App.Persistencia\\obj\\",
+      "projectPath": "C:\\Git\\Mascotas\\MascotaFeliz.App\\MascotaFeliz.App.Persistencia\\MascotaFeliz.App.Persistencia.csproj",
+      "packagesPath": "C:\\Users\\juane\\.nuget\\packages\\",
+      "outputPath": "C:\\Git\\Mascotas\\MascotaFeliz.App\\MascotaFeliz.App.Persistencia\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\adham\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\juane\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"
@@ -7286,8 +7286,8 @@
       "frameworks": {
         "netstandard2.1": {
           "projectReferences": {
-            "C:\\proyectog\\Mascotas\\MascotaFeliz.App\\MascotaFeliz.App.Dominio\\MascotaFeliz.App.Dominio.csproj": {
-              "projectPath": "C:\\proyectog\\Mascotas\\MascotaFeliz.App\\MascotaFeliz.App.Dominio\\MascotaFeliz.App.Dominio.csproj"
+            "C:\\Git\\Mascotas\\MascotaFeliz.App\\MascotaFeliz.App.Dominio\\MascotaFeliz.App.Dominio.csproj": {
+              "projectPath": "C:\\Git\\Mascotas\\MascotaFeliz.App\\MascotaFeliz.App.Dominio\\MascotaFeliz.App.Dominio.csproj"
             }
           }
         }

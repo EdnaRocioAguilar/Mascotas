@@ -31,7 +31,7 @@ namespace MascotaFeliz.App.Frontend.Pages
             }
             if (dueno == null)
             {
-                return RedirectToPage("./NotFound");
+                return RedirectToPage("");
             }
             else
                 return Page();

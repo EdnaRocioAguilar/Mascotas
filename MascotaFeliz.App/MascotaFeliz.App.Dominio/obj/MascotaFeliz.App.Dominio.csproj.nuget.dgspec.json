@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\proyectog\\Mascotas\\MascotaFeliz.App\\MascotaFeliz.App.Dominio\\MascotaFeliz.App.Dominio.csproj": {}
+    "C:\\Git\\Mascotas\\MascotaFeliz.App\\MascotaFeliz.App.Dominio\\MascotaFeliz.App.Dominio.csproj": {}
   },
   "projects": {
-    "C:\\proyectog\\Mascotas\\MascotaFeliz.App\\MascotaFeliz.App.Dominio\\MascotaFeliz.App.Dominio.csproj": {
+    "C:\\Git\\Mascotas\\MascotaFeliz.App\\MascotaFeliz.App.Dominio\\MascotaFeliz.App.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\proyectog\\Mascotas\\MascotaFeliz.App\\MascotaFeliz.App.Dominio\\MascotaFeliz.App.Dominio.csproj",
+        "projectUniqueName": "C:\\Git\\Mascotas\\MascotaFeliz.App\\MascotaFeliz.App.Dominio\\MascotaFeliz.App.Dominio.csproj",
         "projectName": "MascotaFeliz.App.Dominio",
-        "projectPath": "C:\\proyectog\\Mascotas\\MascotaFeliz.App\\MascotaFeliz.App.Dominio\\MascotaFeliz.App.Dominio.csproj",
-        "packagesPath": "C:\\Users\\adham\\.nuget\\packages\\",
-        "outputPath": "C:\\proyectog\\Mascotas\\MascotaFeliz.App\\MascotaFeliz.App.Dominio\\obj\\",
+        "projectPath": "C:\\Git\\Mascotas\\MascotaFeliz.App\\MascotaFeliz.App.Dominio\\MascotaFeliz.App.Dominio.csproj",
+        "packagesPath": "C:\\Users\\juane\\.nuget\\packages\\",
+        "outputPath": "C:\\Git\\Mascotas\\MascotaFeliz.App\\MascotaFeliz.App.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\adham\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\juane\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"

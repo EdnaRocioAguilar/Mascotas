@@ -7,12 +7,15 @@ using MascotaFeliz.App.Dominio;
 namespace MascotaFeliz.App.Persistencia
 {
     public interface IRepositorioHistoria
-    {
-       
+    { 
+        
         Historia AddHistoria(Historia historia);
         Historia UpdateHistoria(Historia historia);
         void DeleteHistoria(int idHistoria);
         Historia GetHistoria(int idHistoria);
-        
-    }
+        Historia AsignarHistoria (int idMascota, int idHistoria );
+        IEnumerable<Historia> GetAllHistorias_();
+        
+        
+    }
 }
