@@ -1,27 +1,32 @@
 ﻿@page
 @model MascotaFeliz.App.Frontend.Pages.DetallesVeterinarioModel
 @{
-}
+}<html><body>
+    <style> 
+.l{display: inline-block;
+            padding: 10px;
+            margin:10px;
+            position:relative;
+           }
+        .i2{display: inline-block;
+          position:relative;
+          left: 370px;
+          top: -130px;
+           }</style>
+
 <h1> Detalles del Veterinario</h1>
 <div>
-    Id: @Model.veterinario.Id
+    <ul class="l"> 
+        <li>Id: @Model.veterinario.Id</li>
+        <li>Cedula: @Model.veterinario.Cedula</li>
+        <li>Nombre: @Model.veterinario.Nombres</li>
+        <li>Apellidos: @Model.veterinario.Apellidos</li>
+        <li>Direccion: @Model.veterinario.Direccion</li>
+        <li>Telefono: @Model.veterinario.Telefono</li>
+        <li>Tarjeta Profesional: @Model.veterinario.TarjetaProfesional</li>
+
+    </ul>
+    
+ <div class="i2"><img src="https://thumbs.dreamstime.com/b/veterinario-con-los-personajes-de-dibujos-animados-del-gato-y-perro-animal-dom%C3%A9stico-107130807.jpg"width="500" heigth="550" alt=""></div>
 </div>
-<div>
-    Cedula: @Model.veterinario.Cedula
-</div>
-<div>
-    Nombre: @Model.veterinario.Nombres
-</div>
-<div>
-    Apellidos: @Model.veterinario.Apellidos
-</div>
-<div>
-    Direccion: @Model.veterinario.Direccion
-</div>
-<div>
-    Telefono: @Model.veterinario.Telefono
-</div>
-<div>
-    Tarjeta Profesional: @Model.veterinario.TarjetaProfesional
-</div>
-<a asp-page="./ListaVeterinario" class="btn-default">Lista de Veterinarios</a>
+<a asp-page="./ListaVeterinario" class="btn-default">Lista de Veterinarios</a></body></html>

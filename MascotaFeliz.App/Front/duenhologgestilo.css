@@ -16,11 +16,11 @@ body {
 
 	margin: auto;
 	margin-top: 100px;
-	margin border-radius: 4px;
+	margin : 4px;
 	font-family: "calibri";
 	color: white;
 	box-shadow: 7 px 14px 34px #001;
-}
+    }
 
 .form-register h4 {
 	font-size: 44 px;
@@ -40,7 +40,7 @@ body {
 }
 
 .form-register p {
-	padding: ;
+	
 	height: 50px;
 	text-align: center;
 	font-size: 18px;

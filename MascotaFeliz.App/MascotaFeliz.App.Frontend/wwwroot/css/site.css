@@ -67,5 +67,15 @@ body {
   bottom: 0;
   width: 100%;
   white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
+  line-height: 60px;
+  color: #5f6161; /* Vertically center the text there */
+}
+header{
+  width: 100%;
+  background: #99e1e5;
+  overflow: hidden;
+} 
+.navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse, ul li a:hover{
+background: #b0e4fd;
+color: #000000;
 }

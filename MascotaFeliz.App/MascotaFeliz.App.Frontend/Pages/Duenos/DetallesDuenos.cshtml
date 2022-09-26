@@ -2,26 +2,45 @@
 @model MascotaFeliz.App.Frontend.Pages.DetallesDuenosModel
 @{
 }
-<h1> Detalles del Dueño</h1>
-<div>
-    Id: @Model.dueno.Id
+<html>
+
+    <body> 
+        <style>
+            *{
+               margin: 0; padding: 0;
+            }
+            body{
+                height: 100vw;
+                background-color: #d6e4f0;
+            }
+            l{display: inline-block;
+            padding: 20px;
+            margin:10px;
+            position:relative;
+            top;20}
+          .i2{display: inline-block;
+          position:relative;
+          left: 450px;
+          top: -205px;
+           }
+        </style>
+        
+  
+<h1 class="h"> Detalles del Dueño</h1>
+<div class="c">
+    <div class="cc">
+        <ul class="l">
+            <li>Id: @Model.dueno.Id</li>
+            <li>Cedula: @Model.dueno.Cedula</li>
+            <li>Nombre: @Model.dueno.Nombres</li>
+            <li>Apellidos: @Model.dueno.Apellidos</li>
+            <li>Direccion: @Model.dueno.Direccion</li>
+            <li>Telefono: @Model.dueno.Telefono</li>
+            <li>Correo: @Model.dueno.Correo</li>
+        </ul>
+    
+      <div class="i2"><img src="https://www.elcolombiano.com/binrepository/834x562/0c0/0d0/none/11101/QJHI/pmascotas-25-jpg_39243650_20220105205818.jpg" width="600" heigth="450"alt=""></div>
+ 
+    </div>
 </div>
-<div>
-    Cedula: @Model.dueno.Cedula
-</div>
-<div>
-    Nombre: @Model.dueno.Nombres
-</div>
-<div>
-    Apellidos: @Model.dueno.Apellidos
-</div>
-<div>
-    Direccion: @Model.dueno.Direccion
-</div>
-<div>
-    Telefono: @Model.dueno.Telefono
-</div>
-<div>
-    Correo: @Model.dueno.Correo
-</div>
-<a asp-page="./ListaDuenos" class="btn-default">Lista de Dueños</a>
+<a asp-page="./ListaDuenos" class="bi bi-arrow-left-square-fill">Lista de Dueños</a>  </body></html>

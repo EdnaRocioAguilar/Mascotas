@@ -23,17 +23,17 @@ namespace MascotaFeliz.App.Frontend.Pages
 
         
 
-        public IActionResult OnGet(int visitasPyPId)
-        {
-            visitasPyP = _repoVisitasPyP.GetVisitasPyP(visitasPyPId);
-            if (visitasPyP == null)
-            {
-                return RedirectToPage("./NotFound");
-            }
-            else
-            {
-                return Page();
-            }
-        }
+        // public IActionResult OnGet(int visitasPyPId)
+        // {
+        //     visitasPyP = _repoVisitasPyP.GetVisitasPyP(visitasPyPId);
+        //     // if (visitasPyP == null)
+        //     // {
+        //         return RedirectToPage("./NotFound");
+        //     }
+        //     else
+        //     {
+        //         return Page();
+        //     }
+        // }
     }
 }
